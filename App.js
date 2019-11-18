@@ -40,11 +40,11 @@ export default function App() {
                 </Text>
             </View>
           <View style={styles.buttonView}>
-            <TouchableOpacity style={[styles.detail,styles.button,{backgroundColor:'#fff'}]}>
-                <Text style={{ alignContent: 'center', color: '#606' }} onPress={() =>Alert.alert("Cancel")} > Cancel </Text>
+            <TouchableOpacity style={[styles.detail,styles.button,{backgroundColor:'#fff'}]} onPress={() =>Alert.alert("Cancel")}>
+                <Text style={{ alignContent: 'center', color: '#606' }}  > Cancel </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={[styles.detail,styles.button]}>
-                <Text style={{ alignContent: 'center', color: '#fff' }} onPress={() =>Alert.alert("Pay") } > Pay </Text>
+            <TouchableOpacity style={[styles.detail,styles.button]} onPress={() =>Alert.alert("Pay") }>
+                <Text style={{ alignContent: 'center', color: '#fff' }}  > Pay </Text>
             </TouchableOpacity>
           </View>
         </ScrollView>
@@ -103,6 +103,7 @@ const styles = StyleSheet.create({
         padding: 10,
         width:Dimensions.get('window').width/2.2,
         marginLeft: 20,
+        marginRight:20,
         alignItems: 'flex-end',
     },
     textStyle:{

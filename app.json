@@ -24,7 +24,11 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "ng.com.amazon",
       "supportsTablet": true
+    },
+    "android": {
+      "package": "ng.com.amazon"
     }
   }
 }
